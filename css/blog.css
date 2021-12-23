@@ -6,8 +6,8 @@
 /* Mobile First Layout */
 .container {
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 120px 900px 600px 75px;
+  grid-template-columns: auto auto;
+  grid-template-rows: 200px 950px 600px 100px;
   border: none;
 /* Use grid-template-area to create a mobile layout where each named space occupies its own row */
 grid-template-areas:
@@ -70,10 +70,9 @@ grid-template-areas:
 
 .across {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
-  padding: 10px;
   background: #888888;
   color: white;
 }
@@ -111,4 +110,14 @@ ul {
   "ft ft ft";
   border: none;
 }
+
+.across {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #888888;
+  color: white;
+}
+
 }

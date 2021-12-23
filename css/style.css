@@ -54,7 +54,7 @@
 
 .card {
   display: grid;
-  grid-template-columns: 200px 200px;
+  grid-template-columns: auto auto;
   grid-template-rows: 60px 100px 40PX;
   grid-template-areas:
   "ch cp"
@@ -114,7 +114,6 @@
   box-shadow: 3px #888888;
   background: #ffffff;
   border-style: groove;
-  float: left;
   }
 
 .petty-hdr {
