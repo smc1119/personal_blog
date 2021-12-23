@@ -1,0 +1,94 @@
+/*Common Styles*/
+
+ h1 {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  margin-top: 0;
+}
+
+.slant {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+/*https://stackoverflow.com/questions/10128950/how-to-write-a-caption-under-an-image*/
+.img-caption {
+  text-align: center;
+}
+
+.img-text {
+  text-decoration: none;
+  display: block;
+}
+
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_pill_button */
+.button1 {
+  background-color: #ffffff;
+  border-color: #0084ff;
+  color: #0084ff;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.button1:hover {
+  border-color: #a19d9d;
+  color: #a19d9d;
+}
+
+.button2 {
+  background-color: #ffffff;
+  border-color: #a19d9d;
+  color: #a19d9d;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.button2:hover {
+  border-color: #0084ff;
+  color: #0084ff;
+}
+
+.button3 {
+  background-color: #ffffff;
+  border-color: #008000;
+  color: #008000;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 15px;
+}
+
+.button3:hover {
+  border-color: #ffd700;
+  color: #ffd700;
+}
+
+.button4 {
+  background-color: #ffffff;
+  border-color: #ffd700;
+  color: #ffd700;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 15px;
+}
+
+.button4:hover {
+  border-color: #008000;
+  color: #008000;
+}

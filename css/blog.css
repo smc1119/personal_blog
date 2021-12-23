@@ -1,0 +1,114 @@
+/*https://www.w3schools.com/cssref/pr_import_rule.asp*/
+@import url("https://fonts.googleapis.com/css?family=Sofia");
+@import url("https://www.w3schools.com/w3css/4/w3.css");
+@import "common-styles.css";
+
+/* Mobile First Layout */
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 120px 900px 600px 75px;
+  border: none;
+/* Use grid-template-area to create a mobile layout where each named space occupies its own row */
+grid-template-areas:
+"hd"
+"main"
+"side"
+"ft";
+}
+
+.header {
+ grid-area: hd;
+}
+
+.content {
+ grid-area: main;
+}
+
+.sidebar {
+ grid-area: side;
+}
+
+.footer {
+ grid-area: ft;
+}
+
+.sidebar {
+  border: none;
+  padding: 10px;
+  background: #ffffff;
+  }
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px;
+  background: #ffffff;
+}
+
+#sample {
+  margin-bottom: 0;
+}
+
+.date {
+  color: #a19d9d;
+  font-style: italic;
+}
+
+.lined {
+  text-decoration: underline;
+}
+
+.textbox {
+  border: 1px #a19d9d;
+  border-style: groove;
+  background: #ffffff;
+  padding-bottom: 5px;
+}
+
+.across {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: #888888;
+  color: white;
+}
+
+.link {
+  text-decoration: underline;
+  cursor: pointer;
+  background: none;
+  border:0;
+  margin-top: 0;
+  color: #0000ff;
+}
+
+#hdr {
+  font-family: "Sofia";
+  font-size: 50px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* If wide enough */
+@media(min-width:900px) {
+.container {
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  grid-template-rows: 90px 600px 75px;
+  grid-template-areas: 
+  "hd hd hd"
+  "main main side"
+  "ft ft ft";
+  border: none;
+}
+}

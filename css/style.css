@@ -1,0 +1,178 @@
+/*https://www.w3schools.com/cssref/pr_import_rule.asp*/
+@import url("https://fonts.googleapis.com/css?family=Sofia");
+@import url("https://www.w3schools.com/w3css/4/w3.css");
+@import "common-styles.css";
+
+/* Mobile first */
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 240px 200px 200px 200px 225px;
+  grid-gap: 10px;
+  grid-template-areas:
+  "hd"
+  "b1"
+  "b2"
+  "b3"
+  "b4"
+  "b5"
+  "b6"
+  "ft";
+}
+
+.header {
+  grid-area: hd;
+}
+
+.blog1 {
+  grid-area: b1;  
+}
+
+.blog2 {
+  grid-area: b2;  
+}
+
+.blog3 {
+  grid-area: b3;  
+}
+
+.blog4 {
+  grid-area: b4;  
+}
+
+.blog5 {
+  grid-area: b5;  
+}
+
+.blog6 {
+  grid-area: b6;  
+}
+
+.footer {
+  grid-area: ft; 
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 60px 100px 40PX;
+  grid-template-areas:
+  "ch cp"
+  "ex ex"
+  "cf cf";
+}
+
+.card-hdr {
+  grid-area: ch;
+}
+
+.card-pic {
+  grid-area: cp;
+}
+
+.example {
+  grid-area: ex;  
+}
+
+.card-ft {
+  grid-area: cf;  
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px;
+  background: #888888;
+  color: white;
+}
+
+.slant {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px;
+  background: #888888;
+  color: white;
+}
+
+#hdr {
+  font-family: "Sofia";
+  font-size: 60px;
+}
+
+.box {
+  height: 200px;
+  width: 600px;
+  box-shadow: 3px #888888;
+  background: #ffffff;
+  border-style: groove;
+  float: left;
+  }
+
+.petty-hdr {
+  margin: 0;
+  color: #008000;
+}
+
+.stones-hdr {
+  margin: 0;
+  color: #ffd700;
+}
+
+.blog-date {
+  margin: 0;
+  font-size: 15px;
+  color: #666666;
+}
+
+.link {
+  font-size: 15px;
+  color: #0000ff; 
+}
+
+.example {
+  margin: 0;
+  font-weight: bold;
+}
+
+.ex-text {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+  /* If Screen Is Wide Enough */
+  @media(min-width:900px) {
+  .container {
+    display: grid;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: 175px 200px 200px 200px 175px;
+    grid-gap: 10px;
+    grid-template-areas:
+    "hd hd"
+    "b1 b2"
+    "b3 b4"
+    "b5 b6"
+    "ft ft";
+    border: 2px #000000;
+    padding-left: 100px;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 60px 100px 40PX;
+    grid-template-areas:
+    "ch cp"
+    "ex ex"
+    "cf cf";
+  }
+  
+}
