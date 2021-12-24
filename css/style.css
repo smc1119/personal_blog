@@ -54,8 +54,8 @@
 
 .card {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: 60px 100px 40PX;
+  grid-template-columns: 50px 550px;
+  grid-template-rows: 80px 80px 40px;
   grid-template-areas:
   "ch cp"
   "ex ex"
@@ -152,7 +152,7 @@
   .container {
     display: grid;
     grid-template-columns: 600px 600px;
-    grid-template-rows: 175px 200px 200px 200px 175px;
+    grid-template-rows: 75px 200px 200px 200px 175px;
     grid-gap: 10px;
     grid-template-areas:
     "hd hd"
@@ -173,5 +173,14 @@
     "ex ex"
     "cf cf";
   }
+
+  .box {
+    height: 200px;
+    width: 600px;
+    box-shadow: 3px #888888;
+    background: #ffffff;
+    border-style: groove;
+    }
+  
   
 }
