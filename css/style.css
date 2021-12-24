@@ -6,8 +6,8 @@
 /* Mobile first */
 .container {
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 240px 200px 200px 200px 225px;
+  grid-template-columns: 600px;
+  grid-template-rows: 300px 200px 200px 200px 165px;
   grid-gap: 10px;
   grid-template-areas:
   "hd"
@@ -105,7 +105,7 @@
 
 #hdr {
   font-family: "Sofia";
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .box {
@@ -152,7 +152,7 @@
   .container {
     display: grid;
     grid-template-columns: 600px 600px;
-    grid-template-rows: 75px 200px 200px 200px 175px;
+    grid-template-rows: 150px 200px 200px 200px 75px;
     grid-gap: 10px;
     grid-template-areas:
     "hd hd"
@@ -174,13 +174,4 @@
     "cf cf";
   }
 
-  .box {
-    height: 200px;
-    width: 600px;
-    box-shadow: 3px #888888;
-    background: #ffffff;
-    border-style: groove;
-    }
-  
-  
 }
