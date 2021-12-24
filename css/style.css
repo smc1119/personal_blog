@@ -7,7 +7,7 @@
 .container {
   display: grid;
   grid-template-columns: 600px;
-  grid-template-rows: 300px 200px 200px 200px 165px;
+  grid-template-rows: 325px 200px 200px 200px 165px;
   grid-gap: 10px;
   grid-template-areas:
   "hd"
@@ -54,7 +54,7 @@
 
 .card {
   display: grid;
-  grid-template-columns: 50px 550px;
+  grid-template-columns: 40px 560px;
   grid-template-rows: 80px 80px 40px;
   grid-template-areas:
   "ch cp"
@@ -105,7 +105,7 @@
 
 #hdr {
   font-family: "Sofia";
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .box {
